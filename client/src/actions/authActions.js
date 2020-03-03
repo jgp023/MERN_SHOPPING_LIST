@@ -106,7 +106,7 @@ export const tokenConfig = getState => {
 
   // Headers
   const config = {
-    Headers: {
+    headers: {
       "Content-type": "application/json"
     }
   };
@@ -115,6 +115,5 @@ export const tokenConfig = getState => {
   if (token) {
     config.headers["x-auth-token"] = token;
   }
-
   return config;
 };
